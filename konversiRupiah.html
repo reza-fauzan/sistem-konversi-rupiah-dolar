@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Dollar to Rupiah</title>
+</head>
+<body>
+    <fieldset style="width: 30%; margin: auto;">
+        <legend>Kurs Rupiah - Mata Uang Asing</legend>
+        
+        <input type="number" id="nominal">
+        <button id="ubah" onclick="perhitungan()">Ubah ke Dollar</button>
+        <br><br>
+        <div id="hasil"></div>
+    </fieldset>
+
+    <script>
+        function perhitungan() {
+            const inputNominal = document.getElementById("nominal").value;
+            document.getElementById("hasil").innerHTML = inputNominal * 14650 + ' Rupiah'
+        }
+    </script>
+</body>
+</html>
